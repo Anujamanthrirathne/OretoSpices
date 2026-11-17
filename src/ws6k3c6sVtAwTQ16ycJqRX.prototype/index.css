@@ -1,0 +1,46 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORT — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORT MUST NEVER BE DELETED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss';
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+@source "../shared";
+
+@theme {
+  --color-espresso: #24150d;
+  --color-bark: #3d2516;
+  --color-cocoa: #5c3a24;
+  --color-gold: #c9962e;
+  --color-gold-soft: #e7c97a;
+  --color-cream: #faf4e8;
+  --color-parchment: #f1e6d0;
+  --color-sand: #e3d3b4;
+  --color-leaf: #4b6a33;
+  --color-leaf-soft: #e4ebd9;
+  --color-chili: #8b1e2b;
+  --color-ink: #2a1a10;
+  --color-muted: #6f5b4a;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --ease-out-strong: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
